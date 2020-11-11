@@ -4,6 +4,7 @@ tmp
 vendor
 bin
 .bundle
+log
 
 package-lock.json
 
