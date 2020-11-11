@@ -1,0 +1,87 @@
+require: rubocop-rails
+AllCops:
+    TargetRubyVersion: 2.6
+    Exclude:
+      # Defaults
+      - 'node_modules/**/*'
+      - 'tmp/**/*'
+      - 'vendor/**/*'
+      - '.git/**/*'
+      # Project
+      - 'bin/*'
+      - 'db/schema.rb'
+
+Rails:
+    Enabled: true
+Gemspec/RequiredRubyVersion:
+    Enabled: true
+
+Layout/IndentationWidth:
+  Width: 4
+Layout/LineLength:
+    Max: 120
+    Exclude:
+        - 'db/seed_data.rb'
+Layout/HashAlignment:
+    EnforcedHashRocketStyle: table
+    EnforcedColonStyle: table
+Layout/SpaceAroundEqualsInParameterDefault:
+    EnforcedStyle: no_space
+Style/Documentation:
+    Enabled: false
+Style/PreferredHashMethods:
+    EnforcedStyle: verbose
+
+Metrics/AbcSize:
+    Exclude:
+        - 'db/seed_data.rb'
+Metrics/BlockLength:
+    Max: 32
+    Exclude:
+      - 'config/routes.rb'
+    ExcludedMethods:
+      - 'describe'
+      - 'context'
+      - 'namespace'
+      - 'resource'
+      - 'guard'
+      - 'Rails.application.routes.draw'
+Metrics/MethodLength:
+    Max: 32
+    Exclude:
+        - 'db/seed_data.rb'
+Metrics/ModuleLength:
+    Exclude:
+        - 'db/seed_data.rb'
+
+# Version 0.85.0
+Layout/EmptyLinesAroundAttributeAccessor: # 0.83
+  Enabled: true
+Layout/SpaceAroundMethodCallOperator: # 0.82
+  Enabled: true
+Lint/RaiseException: # 0.81
+  Enabled: true
+Lint/StructNewOverride: # 0.81
+  Enabled: true
+Style/ExponentialNotation: # 0.82
+  Enabled: true
+Style/HashEachMethods: # 0.80
+  Enabled: true
+  AutoCorrect: false
+Style/HashTransformKeys: # 0.80
+  Enabled: true
+  AutoCorrect: false
+Style/HashTransformValues: # 0.80
+  Enabled: true
+  AutoCorrect: false
+Style/SlicingWithRange: # 0.83
+  Enabled: true
+Lint/DeprecatedOpenSSLConstant: # 0.85
+    Enabled: true
+Lint/MixedRegexpCaptureTypes: # 0.85
+    Enabled: true
+Style/RedundantRegexpCharacterClass: # 0.85
+    Enabled: true
+Style/RedundantRegexpEscape: # 0.85
+    Enabled: true
+
