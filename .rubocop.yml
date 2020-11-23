@@ -1,87 +1,105 @@
+
 require: rubocop-rails
 AllCops:
     TargetRubyVersion: 2.6
     Exclude:
-      # Defaults
-      - 'node_modules/**/*'
-      - 'tmp/**/*'
-      - 'vendor/**/*'
-      - '.git/**/*'
-      # Project
+      - 'Guardfile'
       - 'bin/*'
+      - 'node_modules/**/*'
+      - 'vendor/**/*'
+      - 'db/seed_data.rb'
       - 'db/schema.rb'
+      - 'config/routes.rb'
 
 Rails:
     Enabled: true
+
 Gemspec/RequiredRubyVersion:
     Enabled: true
 
-Layout/IndentationWidth:
-  Width: 4
-Layout/LineLength:
-    Max: 120
-    Exclude:
-        - 'db/seed_data.rb'
+# No space makes the method definition shorter and differentiates
+# from a regular assignment.
+Layout/SpaceAroundEqualsInParameterDefault:
+    EnforcedStyle: no_space
+
+# Most readable form.
 Layout/HashAlignment:
     EnforcedHashRocketStyle: table
     EnforcedColonStyle: table
-Layout/SpaceAroundEqualsInParameterDefault:
-    EnforcedStyle: no_space
+
+Layout/LineLength:
+    Max: 120
+
+Layout/IndentationWidth:
+  Width: 4 # 4 spaces for Indentation.
+
+Lint/RaiseException:
+    Enabled: true
+
+Lint/StructNewOverride:
+    Enabled: true
+
+Metrics/BlockLength:
+    ExcludedMethods: ['describe', 'context', 'shared_examples', 'namespace', 'ActiveRecord::Schema.define']
+
+# Skips style of child classes and modules.
+Style/ClassAndModuleChildren:
+    Enabled: false
+
+Style/CollectionMethods:
+    Enabled: true
+    PreferredMethods:
+        # inject seems more common in the community.
+        reduce: "inject"
+
 Style/Documentation:
     Enabled: false
+
+Style/HashEachMethods:
+    Enabled: true
+    AutoCorrect: false # Unsafe autocorrect
+
+Style/HashTransformKeys:
+    Enabled: true
+    AutoCorrect: false # Unsafe autocorrect
+
+Style/HashTransformValues:
+    Enabled: true
+    AutoCorrect: false # Unsafe autocorrect
+
+# Mixing the styles looks just silly.
+Style/HashSyntax:
+    EnforcedStyle: ruby19_no_mixed_keys
+
+# has_key? and has_value? are far more readable than key? and value?
 Style/PreferredHashMethods:
     EnforcedStyle: verbose
 
-Metrics/AbcSize:
-    Exclude:
-        - 'db/seed_data.rb'
-Metrics/BlockLength:
-    Max: 32
-    Exclude:
-      - 'config/routes.rb'
-    ExcludedMethods:
-      - 'describe'
-      - 'context'
-      - 'namespace'
-      - 'resource'
-      - 'guard'
-      - 'Rails.application.routes.draw'
+Layout/EmptyLinesAroundAttributeAccessor:
+    Enabled: true
+Layout/SpaceAroundMethodCallOperator:
+    Enabled: true
+Style/ExponentialNotation:
+    Enabled: true
+Style/SlicingWithRange:
+    Enabled: true
+
 Metrics/MethodLength:
-    Max: 32
+    Max: 20
     Exclude:
         - 'db/seed_data.rb'
+
 Metrics/ModuleLength:
     Exclude:
         - 'db/seed_data.rb'
 
 # Version 0.85.0
-Layout/EmptyLinesAroundAttributeAccessor: # 0.83
-  Enabled: true
-Layout/SpaceAroundMethodCallOperator: # 0.82
-  Enabled: true
-Lint/RaiseException: # 0.81
-  Enabled: true
-Lint/StructNewOverride: # 0.81
-  Enabled: true
-Style/ExponentialNotation: # 0.82
-  Enabled: true
-Style/HashEachMethods: # 0.80
-  Enabled: true
-  AutoCorrect: false
-Style/HashTransformKeys: # 0.80
-  Enabled: true
-  AutoCorrect: false
-Style/HashTransformValues: # 0.80
-  Enabled: true
-  AutoCorrect: false
-Style/SlicingWithRange: # 0.83
-  Enabled: true
-Lint/DeprecatedOpenSSLConstant: # 0.85
+Lint/DeprecatedOpenSSLConstant:
     Enabled: true
-Lint/MixedRegexpCaptureTypes: # 0.85
+Lint/MixedRegexpCaptureTypes:
     Enabled: true
-Style/RedundantRegexpCharacterClass: # 0.85
+Style/RedundantRegexpCharacterClass:
     Enabled: true
-Style/RedundantRegexpEscape: # 0.85
+Style/RedundantRegexpEscape:
     Enabled: true
 
