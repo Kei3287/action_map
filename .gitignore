@@ -70,6 +70,22 @@ yarn-debug.log*
 
 
 
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+/public/uploads
+
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
