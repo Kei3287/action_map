@@ -10,7 +10,6 @@ AllCops:
       - 'db/seed_data.rb'
       - 'db/schema.rb'
       - 'config/routes.rb'
-      - 'app/models/representative.rb'
 
 Rails:
     Enabled: true

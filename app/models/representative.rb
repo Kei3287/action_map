@@ -7,34 +7,48 @@ class Representative < ApplicationRecord
         reps = []
 
         rep_info.officials.each_with_index do |official, index|
-            ocdid_temp = ''
-            title_temp = ''
-            party_temp = ''
-            photo_url_temp = ''
-            address_temp = ''
-
-            if official.address.presence
-                official.address.each do |addr|
-                    address_temp += '\n' if address_temp != ''
-                    addr_temp = addr.line1 + ', ' + addr.city + ', ' + addr.state + ', ' + addr.zip
-                    address_temp += addr_temp
-                end
-            end
-            party_temp = official.party if official.party.presence
-            photo_url_temp = official.photo_url if official.photo_url.presence
-
-            rep_info.offices.each do |office|
-                if office.official_indices.include? index
-                    title_temp = office.name
-                    ocdid_temp = office.division_id
-                end
-            end
-
-            rep = Representative.create!({ name: official.name, ocdid: ocdid_temp,
-                title: title_temp, address: address_temp, party: party_temp, photo_url: photo_url_temp })
+            rep = extract_attributes(official, rep_info, index)
             reps.push(rep)
         end
 
         reps
     end
+
+    def self.extract_attributes(official, rep_info, index)
+        party_temp = official.party || ''
+        photo_url_temp = official.photo_url || ''
+        address_temp = extract_address(official)
+        title_temp, ocdid_temp = extract_title_and_ocdid(rep_info, index)
+
+        Representative.create!({ name: official.name, ocdid: ocdid_temp,
+                title: title_temp, address: address_temp, party: party_temp, photo_url: photo_url_temp })
+    end
+
+    def self.extract_address(official)
+        address_temp = ''
+
+        official.address&.each do |addr|
+            address_temp += '\n' if address_temp != ''
+            addr_temp = addr.line1 + ', ' + addr.city + ', ' + addr.state + ', ' + addr.zip
+            address_temp += addr_temp
+        end
+        address_temp
+    end
+
+    def self.extract_title_and_ocdid(rep_info, index)
+        title_temp = ''
+        ocdid_temp = ''
+
+        rep_info.offices.each do |office|
+            if office.official_indices.include? index
+                title_temp = office.name
+                ocdid_temp = office.division_id
+            end
+        end
+        [title_temp, ocdid_temp]
+    end
+
+    private_class_method :extract_attributes
+    private_class_method :extract_address
+    private_class_method :extract_title_and_ocdid
 end
