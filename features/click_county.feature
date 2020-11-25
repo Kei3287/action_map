@@ -1,11 +1,11 @@
-Feature: display list of movies filtered by MPAA rating
+Feature: Show representatives of a county when the county is clicked
  
-  As a concerned parent
-  So that I can quickly browse movies appropriate for my family
-  I want to see movies matching only certain MPAA ratings
+  As a voter
+  So that I can view relevant representatives
+  I want to see representatives from my county and up
 
-Background: movies have been added to database
-
+Background: A county has a list of representatives
+ 
   Given the following movies exist:
   | title                   | rating | release_date |
   | Aladdin                 | G      | 25-Nov-1992  |
