@@ -1,10 +1,13 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/kei/Dropbox/cal/cs169/project/app/mailers/application_mailer.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/ajax_controller.rb": {
         "lines": [
           null,
           null,
+          null,
+          0,
+          0,
           0,
           0,
           0,
@@ -13,92 +16,10 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/state.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/county.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/representative.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/application_record.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/event.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
           0,
           0,
           null,
@@ -112,21 +33,12 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/user.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/events_controller.rb": {
         "lines": [
           null,
           null,
           0,
-          null,
           0,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           0,
           0,
@@ -137,25 +49,13 @@
           0,
           0,
           0,
-          0,
-          0,
+          null,
           0,
           null,
           0,
           0,
           0,
           0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/models/news_item.rb": {
-        "lines": [
-          null,
-          null,
           0,
           0,
           0,
@@ -170,17 +70,88 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/jobs/application_job.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/login_controller.rb": {
         "lines": [
           null,
           null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
           0,
           0
         ],
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/map_controller.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/map_controller.rb": {
         "lines": [
           null,
           null,
@@ -234,7 +205,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/application_controller.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/my_events_controller.rb": {
         "lines": [
           null,
           null,
@@ -242,6 +213,40 @@
           0,
           null,
           0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
           null,
           0,
           0,
@@ -251,65 +256,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/session_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/events_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/my_news_items_controller.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/my_news_items_controller.rb": {
         "lines": [
           null,
           null,
@@ -374,182 +321,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/ajax_controller.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/my_events_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/login_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/representatives_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/search_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/news_items_controller.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/news_items_controller.rb": {
         "lines": [
           null,
           null,
@@ -579,7 +351,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/controllers/user_controller.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/representatives_controller.rb": {
         "lines": [
           null,
           null,
@@ -592,57 +364,62 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/helpers/news_item_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/search_controller.rb": {
         "lines": [
           null,
           null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
           0,
           0
         ],
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/helpers/session_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/session_controller.rb": {
         "lines": [
           null,
           null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
           0,
           0
         ],
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/helpers/ratings_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/controllers/user_controller.rb": {
         "lines": [
           null,
           null,
+          0,
+          0,
+          0,
           0,
           0
         ],
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/app/helpers/my_news_items_controller_helper.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/helpers/representatives_helper.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kei/Dropbox/cal/cs169/project/app/helpers/application_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
@@ -687,68 +464,70 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/lib/task_helpers/topojson_task_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/helpers/my_news_items_controller_helper.rb": {
         "lines": [
           null,
           null,
           0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/helpers/news_item_helper.rb": {
+        "lines": [
           null,
           null,
           0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/helpers/ratings_helper.rb": {
+        "lines": [
           null,
           null,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/helpers/representatives_helper.rb": {
+        "lines": [
           null,
           null,
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/helpers/session_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
           0,
           0,
           0,
@@ -757,39 +536,25 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/lib/task_helpers/task_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/county.rb": {
         "lines": [
           null,
           null,
           0,
           0,
           null,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
           0,
           0,
           0,
@@ -798,7 +563,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/lib/task_helpers/national_shapefile_request.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/event.rb": {
         "lines": [
           null,
           null,
@@ -806,13 +571,9 @@
           0,
           null,
           0,
-          null,
-          null,
           0,
-          null,
-          null,
           0,
-          null,
+          0,
           0,
           null,
           0,
@@ -820,12 +581,19 @@
           0,
           0,
           0,
-          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/news_item.rb": {
+        "lines": [
+          null,
+          null,
           0,
           0,
           0,
           null,
-          0,
           0,
           0,
           0,
@@ -836,7 +604,56 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/lib/task_helpers/state_shapefile_request.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/representative.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/state.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/app/models/user.rb": {
         "lines": [
           null,
           null,
@@ -844,22 +661,57 @@
           null,
           0,
           null,
-          0,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          0,
           null,
           0,
           null,
           0,
           0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/lib/task_helpers/national_shapefile_request.rb": {
+        "lines": [
           null,
           null,
           0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
           0,
           0,
           0,
@@ -879,7 +731,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/lib/task_helpers/state_consistency_checker.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/lib/task_helpers/state_consistency_checker.rb": {
         "lines": [
           null,
           null,
@@ -929,7 +781,7 @@
         "branches": {
         }
       },
-      "/Users/kei/Dropbox/cal/cs169/project/lib/task_helpers/state_fips_task_helper.rb": {
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/lib/task_helpers/state_fips_task_helper.rb": {
         "lines": [
           null,
           null,
@@ -1011,6 +863,160 @@
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/lib/task_helpers/state_shapefile_request.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/lib/task_helpers/task_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/codio/workspace/hw-agile-iterations-fa20-23/lib/task_helpers/topojson_task_helper.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
           0,
           0,
           0,
@@ -1021,6 +1027,6 @@
         }
       }
     },
-    "timestamp": 1605000099
+    "timestamp": 1606198302
   }
 }
