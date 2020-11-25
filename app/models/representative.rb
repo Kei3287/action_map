@@ -7,14 +7,14 @@ class Representative < ApplicationRecord
         reps = []
 
         rep_info.officials.each_with_index do |official, index|
-            rep = extract_attributes(official, rep_info, index)
+            rep = create_representatives(official, rep_info, index)
             reps.push(rep)
         end
 
         reps
     end
 
-    def self.extract_attributes(official, rep_info, index)
+    def self.create_representatives(official, rep_info, index)
         party_temp = official.party || ''
         photo_url_temp = official.photo_url || ''
         address_temp = extract_address(official)
@@ -48,7 +48,7 @@ class Representative < ApplicationRecord
         [title_temp, ocdid_temp]
     end
 
-    private_class_method :extract_attributes
+    private_class_method :create_representatives
     private_class_method :extract_address
     private_class_method :extract_title_and_ocdid
 end
