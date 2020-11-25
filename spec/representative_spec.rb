@@ -6,7 +6,8 @@ describe 'Representatives' do
     describe RepresentativesController, type: :controller do
         before :each do
             representatives = [
-                { name: 'rep1', ocdid: '123', title: 'AAA', address: 'Berkeley, CA', party: 'Democrats', photo_url: 'a' }
+                { name: 'rep1', ocdid: '123', title: 'AAA', address: 'Berkeley, CA',
+                  party: 'Democrats', photo_url: 'a' }
             ]
             representatives.each do |r|
                 Representative.create!(r)
