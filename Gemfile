@@ -52,6 +52,7 @@ group :development, :test do
 
     # Testing utilities
     gem 'cucumber-rails', require: false
+    gem 'cucumber-rails-training-wheels'
     gem 'database_cleaner'
     gem 'factory_bot'
     gem 'haml_lint'
@@ -59,6 +60,10 @@ group :development, :test do
     gem 'rspec-rails'
     gem 'rubocop-rails'
     gem 'sqlite3'
+  
+    # Extra Testing Utilities for Stubbing (Added by Ian)
+    gem 'webmock'
+    gem 'vcr'
 
     # Guard Plugins
     gem 'guard'
