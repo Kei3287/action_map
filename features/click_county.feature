@@ -1,4 +1,4 @@
-Feature: Show representatives of a county when the county is clicked
+Feature: Show representatives of a county when it is clicked
  
   As a voter
   So that I can view relevant representatives
@@ -6,18 +6,19 @@ Feature: Show representatives of a county when the county is clicked
 
 Background: A county has a list of representatives
  
-  Given the following movies exist:
-  | title                   | rating | release_date |
-  | Aladdin                 | G      | 25-Nov-1992  |
-  | The Terminator          | R      | 26-Oct-1984  |
-  | When Harry Met Sally    | R      | 21-Jul-1989  |
-  | The Help                | PG-13  | 10-Aug-2011  |
-  | Chocolat                | PG-13  | 5-Jan-2001   |
-  | Amelie                  | R      | 25-Apr-2001  |
-  | 2001: A Space Odyssey   | G      | 6-Apr-1968   |
-  | The Incredibles         | PG     | 5-Nov-2004   |
-  | Raiders of the Lost Ark | PG     | 12-Jun-1981  |
-  | Chicken Run             | G      | 21-Jun-2000  |
+  Given the following representatives exist:
+  | Name                   | County                              | 
+  | Catherine Cortez Masto | US Senator NV                       |
+  | Steve Sisolak          | Governor of NV                      |
+  | Mark Gibbons           | NV Supreme Court of Justice         |
+  | Nancy Parent           | Washoe County Clerk                 |
+  | Dianne Feinstein       | US Senator CA                       |
+  | Gavin Newsom           | Governor of CA                      |
+  | Betty T. Yee           | CA State Controller                 |
+  | Phong La               | Alameda County Assessor             | 
+  | Donald J. Trump        | President of the United States      |
+  | Mike Pence             | Vice President of the United States |
+
 
   And  I am on the RottenPotatoes home page
   Then 10 seed movies should exist

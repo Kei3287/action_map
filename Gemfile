@@ -59,6 +59,10 @@ group :development, :test do
     gem 'rspec-rails'
     gem 'rubocop-rails'
     gem 'sqlite3'
+  
+    # Extra Testing Utilities for Stubbing (Added by Ian)
+    gem 'webmock'
+    gem 'vcr'
 
     # Guard Plugins
     gem 'guard'
