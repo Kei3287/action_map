@@ -103,3 +103,5 @@ Style/RedundantRegexpCharacterClass:
 Style/RedundantRegexpEscape:
     Enabled: true
 
+Layout/IndentationStyle:
+  Enabled: false
