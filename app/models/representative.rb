@@ -7,7 +7,15 @@ class Representative < ApplicationRecord
         reps = []
 
         rep_info.officials.each_with_index do |official, index|
-            rep = create_representatives(official, rep_info, index)
+            party_temp, photo_url_temp, address_temp, title_temp, ocdid_temp = create_representatives(official,
+                                                                                                      rep_info, index)
+
+            rep = Representative.find_by(name: official.name, ocdid: ocdid_temp,
+                        title: title_temp, address: address_temp, party: party_temp, photo_url: photo_url_temp)
+            if rep.nil?
+                rep = Representative.create!({ name: official.name, ocdid: ocdid_temp,
+                        title: title_temp, address: address_temp, party: party_temp, photo_url: photo_url_temp })
+            end
             reps.push(rep)
         end
 
@@ -19,9 +27,7 @@ class Representative < ApplicationRecord
         photo_url_temp = official.photo_url || ''
         address_temp = extract_address(official)
         title_temp, ocdid_temp = extract_title_and_ocdid(rep_info, index)
-
-        Representative.create!({ name: official.name, ocdid: ocdid_temp,
-                title: title_temp, address: address_temp, party: party_temp, photo_url: photo_url_temp })
+        [party_temp, photo_url_temp, address_temp, title_temp, ocdid_temp]
     end
 
     def self.extract_address(official)

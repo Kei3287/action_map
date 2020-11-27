@@ -149,5 +149,14 @@ describe 'Representatives' do
                 expect(r.title).to eq civic_result.offices[index].name
             end
         end
+
+        it 'insert each representative only once' do
+            Representative.civic_api_to_representative_params(civic_result2)
+            reps = Representative.civic_api_to_representative_params(civic_result2)
+            reps.each do |r|
+                expect(Representative.where(name: r.name, ocdid: r.ocdid, title: r.title,
+                    address: r.address, party: r.party, photo_url: r.photo_url).size).to eq 1
+            end
+        end
     end
 end
