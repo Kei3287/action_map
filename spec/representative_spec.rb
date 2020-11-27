@@ -144,9 +144,9 @@ describe 'Representatives' do
         it 'create the representatives without address, party, and photo_url' do
             reps = Representative.civic_api_to_representative_params(civic_result2)
             reps.each_with_index do |r, index|
-                expect(r.name).to eq civic_result.officials[index].name
-                expect(r.ocdid).to eq civic_result.offices[index].division_id
-                expect(r.title).to eq civic_result.offices[index].name
+                expect(r.name).to eq civic_result2.officials[index].name
+                expect(r.ocdid).to eq civic_result2.offices[index].division_id
+                expect(r.title).to eq civic_result2.offices[index].name
             end
         end
     end
