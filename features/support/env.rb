@@ -17,6 +17,7 @@ if ENV['CI']
 end
 
 require 'cucumber/rails'
+require 'webmock/cucumber'
 
 # frozen_string_literal: true
 
