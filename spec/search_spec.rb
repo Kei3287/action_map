@@ -7,7 +7,7 @@ RSpec.describe SearchController, type: :controller do
         before :each do
             stub_request(:get, /.*civicinfo*/).to_return(
                 headers: [['Content-Type', 'application/json; charset=UTF-8']],
-                body:    File.read(File.join('spec', 'google_civic_api.json'))
+                body:    File.read(File.join('google_civic_api.json'))
             )
         end
 
