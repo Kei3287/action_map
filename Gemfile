@@ -59,6 +59,7 @@ group :development, :test do
     gem 'rspec-rails'
     gem 'rubocop-rails'
     gem 'sqlite3'
+    gem 'webmock'
 
     # Guard Plugins
     gem 'guard'
